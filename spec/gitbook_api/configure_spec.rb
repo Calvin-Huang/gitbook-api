@@ -53,7 +53,7 @@ describe GitBook::Configurable do
 
     subject do
       GitBook.configure do |config|
-        config.base_url = 'https://enterprise.gitbook.com'
+        config.base_url = base_url
         config.api_url = api_url
         config.username = username
         config.password = password
@@ -87,5 +87,9 @@ describe GitBook::Configurable do
       expect(subject.access_token).to eq(access_token)
       expect(subject.options[:access_token]).to eq(access_token)
     end
+  end
+
+  after(:all) do
+    GitBook.reset_configuration
   end
 end

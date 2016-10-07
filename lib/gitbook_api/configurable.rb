@@ -24,6 +24,10 @@ module GitBook
       options_to_compare.hash == options.hash
     end
 
+    def reset_configuration
+      GitBook::Configurable.keys.each { |key| send("#{key}=", nil) }
+    end
+
     # Getter will assign default value
     def base_url
       @base_url ||= 'https://www.gitbook.com'
