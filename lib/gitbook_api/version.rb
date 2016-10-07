@@ -1,3 +1,3 @@
 module GitBook
-  VERSION = '0.0.1'
+  VERSION = '0.0.0-alpha.1'
 end
