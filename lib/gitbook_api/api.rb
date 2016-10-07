@@ -1,8 +1,10 @@
 require 'gitbook_api/configurable'
+require 'gitbook_api/api/stars'
 
 module GitBook
   class API
     include GitBook::Configurable
+    include GitBook::API::Stars
 
     def initialize(options = {})
       GitBook::Configurable.keys.each do |key|
