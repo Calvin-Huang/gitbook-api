@@ -11,6 +11,7 @@ Ruby unofficial API for GitBook.
 - [ ] Update book.
 - [ ] Manage book setting.
 - [ ] Search book in gitbook.com.
+- [ ] Fetch book's detail information.
 
 ## Contribution
 I'm appreciate at any improvement, please feel free to open PR / Issue to this repo or you can contact [me](https://github.com/Calvin-Huang).
